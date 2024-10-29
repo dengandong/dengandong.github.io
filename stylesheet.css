@@ -129,3 +129,34 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden; /* Hide overflow to make it look like a slider */
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.carousel img {
+  min-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Optional: rounded corners */
+  transition: transform 0.3s ease; /* Smooth scale on hover */
+}
+
+.carousel img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Hide the scrollbar for a cleaner look */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
