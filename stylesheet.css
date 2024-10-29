@@ -160,3 +160,19 @@ span.highlight {
 .carousel::-webkit-scrollbar {
   display: none;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 800px; /* Optional: limits the width for larger screens */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners for a clean look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for depth */
+}
